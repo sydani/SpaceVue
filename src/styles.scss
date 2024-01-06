@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; background-color: #f9f9f9;}
+
+.spinner-loading-shade {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 56px;
+    right: 0;
+    background: rgba(0, 0, 0, 0.15);
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .snackbar-danger {
+    --mdc-snackbar-container-color: #f8d7da;
+    --mat-mdc-snack-bar-button-color: #f44336;
+    --mdc-snackbar-supporting-text-color: #58151c;
+  }

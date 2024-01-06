@@ -1,0 +1,35 @@
+<div class="container my-3">
+    <h1>Dashboard</h1>
+    @if (loading) {
+    <div class="spinner-loading-shade">
+        <mat-spinner></mat-spinner>
+    </div>
+    } @else {
+    <div class="row">
+        <div class="col-sm-5 col-md-5 col-lg-4 mb-3">
+            <mat-card>
+                <mat-card-content>
+                    <ag-charts-angular style="height: 100%" [options]="pieChartOptions"></ag-charts-angular>
+                </mat-card-content>
+            </mat-card>
+        </div>
+        <div class="col-sm-7 col-md-7 col-lg-8 mb-3">
+            <mat-card>
+                <mat-card-content>
+                    <ag-charts-angular style="height: 100%" [options]="barChartOptions">
+                    </ag-charts-angular>
+                </mat-card-content>
+            </mat-card>
+        </div>
+        <div class="col-12">
+            <mat-card>
+                <mat-card-content>
+                    <ag-grid-angular style="height: 400px;" [class]="themeClass" [rowData]="spaceData"
+                        [columnDefs]="colDefs" [pagination]="true">
+                    </ag-grid-angular>
+                </mat-card-content>
+            </mat-card>
+        </div>
+    </div>
+    }
+</div>

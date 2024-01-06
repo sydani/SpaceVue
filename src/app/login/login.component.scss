@@ -1,0 +1,28 @@
+.login {
+    background: linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),url(/assets/images/login_bg.jpg) no-repeat 50% fixed;
+    background-size: cover;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    max-width: 380px;
+    padding: 15px;
+    background: linear-gradient(to bottom right,#ffedbc,#b1fff4);
+}
+
+.mat-mdc-card {
+    width: 100%;
+    background: linear-gradient(to bottom right,#ffedbc,#b1fff4);
+    border-radius: 5px;
+}
+
+::ng-deep .mdc-text-field--filled {
+    background: none !important;
+}
